@@ -1,17 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.SceneManagement;
 
-public class pauseMenuContinue : MonoBehaviour, IPointerClickHandler
+public class Quit : MonoBehaviour,IPointerClickHandler
 {
-    [SerializeField]
-    pauseMenu menu;
     // Start is called before the first frame update
     void Start()
     {
-   
+        
     }
 
     // Update is called once per frame
@@ -22,7 +20,6 @@ public class pauseMenuContinue : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        menu.disablePauseMenu();
+        Application.Quit();
     }
-
 }

@@ -8,6 +8,7 @@ public class pauseMenu : MonoBehaviour
     Image backgroundImage;
     [SerializeField]
     Image menuImage;
+
     // Start is called before the first frame update
     void Start()
     {
