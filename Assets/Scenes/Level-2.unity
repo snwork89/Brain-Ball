@@ -495,13 +495,22 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.99950016, y: -0.99950004}
-  - {x: -0.99950004, y: 0.99950016}
-  - {x: 0.99950016, y: 0.99950004}
-  - {x: 0.99950004, y: -0.99950016}
-  - {x: -0.73088884, y: -0.99950004}
-  - {x: -0.75, y: -0.99950004}
-  - {x: -0.99950016, y: -0.99950004}
+  - {x: -0.95077914, y: -0.59759426}
+  - {x: -2.7081811, y: -0.5288084}
+  - {x: -4.5029078, y: -0.2269129}
+  - {x: -6.120473, y: 0.38008443}
+  - {x: -7.8080597, y: 1.1858624}
+  - {x: -2.942872, y: 3.8025267}
+  - {x: 10.145023, y: 10.984039}
+  - {x: 8.77648, y: 8.281156}
+  - {x: 8.201812, y: 7.167113}
+  - {x: 6.9581413, y: 5.3253922}
+  - {x: 5.555542, y: 3.7266712}
+  - {x: 3.8710246, y: 2.1105587}
+  - {x: 2.3920698, y: 0.8058219}
+  - {x: 0.79363203, y: -0.006680894}
+  - {x: -0.92864025, y: -0.59009486}
+  - {x: -0.95077914, y: -0.59759426}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -521,7 +530,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -1, y: -1, z: 0}
+    - position: {x: -0.95070606, y: -0.5980975, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -529,9 +538,9 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
       m_CornerMode: 1
-    - position: {x: -1, y: 1, z: 0}
+    - position: {x: -2.708264, y: -0.52930146, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -539,9 +548,9 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
       m_CornerMode: 1
-    - position: {x: 1, y: 1, z: 0}
+    - position: {x: -4.5030828, y: -0.22738124, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -549,9 +558,9 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
       m_CornerMode: 1
-    - position: {x: 1, y: -1, z: 0}
+    - position: {x: -6.098909, y: 0.36922315, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -559,9 +568,109 @@ MonoBehaviour:
       bevelCutoff: 0
       bevelSize: 0
       spriteIndex: 0
-      corner: 0
+      corner: 1
       m_CornerMode: 1
-  m_SpriteShape: {fileID: 11400000, guid: 528ea541b5c91754b8f3424c8163b8ee, type: 2}
+    - position: {x: -7.808296, y: 1.1863028, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: -2.9431124, y: 3.802965, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 10.144784, y: 10.984478, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 9.089104, y: 8.886113, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 8.202227, y: 7.166833, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 6.958517, y: 5.3250623, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 5.555888, y: 3.7263105, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 3.890443, y: 2.1270227, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 2.3922963, y: 0.8053762, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+    - position: {x: 0.7937924, y: -0.0071544684, z: 0}
+      leftTangent: {x: 0, y: 0, z: 0}
+      rightTangent: {x: 0, y: 0, z: 0}
+      mode: 0
+      height: 1
+      bevelCutoff: 0
+      bevelSize: 0
+      spriteIndex: 0
+      corner: 1
+      m_CornerMode: 1
+  m_SpriteShape: {fileID: 11400000, guid: 8f3640d4082f8c34786ab7b23705a012, type: 2}
   m_FillPixelPerUnit: 100
   m_StretchTiling: 1
   m_SplineDetail: 16
@@ -633,8 +742,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 1.2500001, y: 1.2500001, z: 0}
+    m_Center: {x: 1.1686659, y: 5.204412, z: 0}
+    m_Extent: {x: 9.315556, y: 6.1195025, z: 0}
 --- !u!4 &568308394
 Transform:
   m_ObjectHideFlags: 0
@@ -897,6 +1006,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_TrackedObjectOffset: {x: -1.9922233, y: -3.1900003, z: 0}
+  m_LookaheadTime: 0
+  m_LookaheadSmoothing: 0
+  m_LookaheadIgnoreY: 0
+  m_XDamping: 1
+  m_YDamping: 1
+  m_ZDamping: 1
+  m_TargetMovementOnly: 1
+  m_ScreenX: 0.1
+  m_ScreenY: 0.5
+  m_CameraDistance: 10
+  m_DeadZoneWidth: 0.366
+  m_DeadZoneHeight: 1.012
+  m_DeadZoneDepth: 0
+  m_UnlimitedSoftZone: 0
+  m_SoftZoneWidth: 0.8
+  m_SoftZoneHeight: 1.012
+  m_BiasX: -0.5
+  m_BiasY: 0
+  m_CenterOnActivate: 1
+  m_GroupFramingMode: 2
+  m_AdjustmentMode: 0
+  m_GroupFramingSize: 0.8
+  m_MaxDollyIn: 5000
+  m_MaxDollyOut: 5000
+  m_MinimumDistance: 1
+  m_MaximumDistance: 5000
+  m_MinimumFOV: 3
+  m_MaximumFOV: 60
+  m_MinimumOrthoSize: 1
+  m_MaximumOrthoSize: 5000
 --- !u!114 &804704605
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1058,7 +1198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1008597841}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 73.5, y: -11.1, z: 0}
+  m_LocalPosition: {x: 74.7, y: -11.8, z: 0}
   m_LocalScale: {x: 32.049343, y: 5.3401, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1442,11 +1582,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
+  near clip plane: 0.1
+  far clip plane: 5000
+  field of view: 40
   orthographic: 1
-  orthographic size: 13.572753
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1470,7 +1610,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173742470}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.076955795, y: -0.109999046, z: -10}
+  m_LocalPosition: {x: -6.89837, y: -3.3000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1489,6 +1629,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1207798981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,6 +1871,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ExcludedPropertiesInInspector:
+  - m_Script
+  m_LockStageInInspector: 
+  m_StreamingVersion: 20170927
+  m_Priority: 10
+  m_StandbyUpdate: 2
+  m_LookAt: {fileID: 0}
+  m_Follow: {fileID: 1023421348}
+  m_Lens:
+    FieldOfView: 40
+    OrthographicSize: 10
+    NearClipPlane: 0.1
+    FarClipPlane: 5000
+    Dutch: 0
+    ModeOverride: 0
+    LensShift: {x: 0, y: 0}
+    GateFit: 2
+    m_SensorSize: {x: 1, y: 1}
+  m_Transitions:
+    m_BlendHint: 0
+    m_InheritPosition: 0
+    m_OnCameraLive:
+      m_PersistentCalls:
+        m_Calls: []
+  m_LegacyBlendHint: 0
+  m_ComponentOwner: {fileID: 804704603}
 --- !u!4 &1296464477
 Transform:
   m_ObjectHideFlags: 0
@@ -1717,7 +1905,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1296464475}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.076955795, y: -0.109999046, z: -10}
+  m_LocalPosition: {x: -6.89837, y: -3.3000002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2103,7 +2291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893082032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.44, y: -10.84, z: 0}
+  m_LocalPosition: {x: -15.5, y: -11.6, z: 0}
   m_LocalScale: {x: 19.2778, y: 5.3401, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
