@@ -741,7 +741,7 @@ PlayerSettings:
     Game Performance: 0
     Purchasing: 0
     UDP: 0
-    Unity Ads: 0
+    Unity Ads: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -758,7 +758,7 @@ PlayerSettings:
   cloudProjectId: 35a24a3d-2553-4daa-858f-b63f7ffb2506
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Learning Tools
+  projectName: Goal The Ball
   organizationId: snwork89
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0

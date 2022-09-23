@@ -13,13 +13,14 @@ public class pauseScript : MonoBehaviour
     private void Awake()
     {
         pauseButton = GetComponent<Button>();
-        pauseButton.onClick.AddListener(showPauseScreen);
+        pauseMenuComponent.SetActive(false);
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-          
-        
+        pauseButton.onClick.AddListener(showPauseScreen);
+
     }
 
     // Update is called once per frame
@@ -30,6 +31,7 @@ public class pauseScript : MonoBehaviour
 
     void showPauseScreen()
     {
+        Debug.Log("called");
         pauseMenuComponent.SetActive(true);
     }
 }

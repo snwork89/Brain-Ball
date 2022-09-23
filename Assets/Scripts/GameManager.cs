@@ -1,11 +1,16 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
-
+using UnityEngine.Advertisements;
 public class GameManager : MonoBehaviour
 {
     bool isGameEnded = false;
     public GameOverScreen screenGameOver;
+    string gameId = "4940276";
 
+    private void Start()
+    {
+        Advertisement.Initialize(gameId);
+    }
 
     private void Update()
     {
@@ -32,11 +37,20 @@ public class GameManager : MonoBehaviour
 
     public void GoToNextLevel()
     {
+        showAd();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void showAd()
+    {
+        if (Advertisement.isInitialized)
+        {
+            Advertisement.Show("Interstitial_Android");
+        }
     }
 }
