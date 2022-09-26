@@ -21,5 +21,6 @@ public class RestartButton : MonoBehaviour,IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         Application.LoadLevel(Application.loadedLevel);
+        Time.timeScale = 1;
     }
 }

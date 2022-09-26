@@ -5081,22 +5081,21 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.95077914, y: -0.59759426}
+  - {x: -1.1195365, y: -0.5466954}
   - {x: -2.7081811, y: -0.5288084}
   - {x: -4.5029078, y: -0.2269129}
-  - {x: -6.120473, y: 0.38008443}
-  - {x: -7.8080597, y: 1.1858624}
+  - {x: -8.045045, y: 1.1056589}
   - {x: -2.942872, y: 3.8025267}
   - {x: 10.145023, y: 10.984039}
-  - {x: 8.77648, y: 8.281156}
-  - {x: 8.201812, y: 7.167113}
-  - {x: 6.9581413, y: 5.3253922}
-  - {x: 5.555542, y: 3.7266712}
-  - {x: 3.8710246, y: 2.1105587}
-  - {x: 2.3920698, y: 0.8058219}
-  - {x: 0.79363203, y: -0.006680894}
-  - {x: -0.92864025, y: -0.59009486}
-  - {x: -0.95077914, y: -0.59759426}
+  - {x: 9.076614, y: 8.8652525}
+  - {x: 8.126611, y: 7.206159}
+  - {x: 6.8987722, y: 5.387889}
+  - {x: 5.5555353, y: 3.7266648}
+  - {x: 4.017697, y: 2.1960013}
+  - {x: 2.4602659, y: 0.9369147}
+  - {x: 0.79365665, y: -0.006673264}
+  - {x: -1.0952291, y: -0.53983444}
+  - {x: -1.1195365, y: -0.5466954}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -5116,7 +5115,7 @@ MonoBehaviour:
   m_Spline:
     m_IsOpenEnded: 0
     m_ControlPoints:
-    - position: {x: -0.95070606, y: -0.5980975, z: 0}
+    - position: {x: -1.1194698, y: -0.5471962, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -5156,7 +5155,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: -7.808296, y: 1.1863028, z: 0}
+    - position: {x: -8.045279, y: 1.1061009, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -5196,7 +5195,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 8.202227, y: 7.166833, z: 0}
+    - position: {x: 8.142871, y: 7.229345, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -5206,7 +5205,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 6.958517, y: 5.3250623, z: 0}
+    - position: {x: 6.899161, y: 5.387574, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -5226,7 +5225,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 3.890443, y: 2.1270227, z: 0}
+    - position: {x: 4.018011, y: 2.1956124, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -5236,7 +5235,7 @@ MonoBehaviour:
       spriteIndex: 0
       corner: 1
       m_CornerMode: 1
-    - position: {x: 2.3922963, y: 0.8053762, z: 0}
+    - position: {x: 2.4605124, y: 0.93647957, z: 0}
       leftTangent: {x: 0, y: 0, z: 0}
       rightTangent: {x: 0, y: 0, z: 0}
       mode: 0
@@ -5328,8 +5327,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 1.1686659, y: 5.204412, z: 0}
-    m_Extent: {x: 9.315556, y: 6.1195025, z: 0}
+    m_Center: {x: 1.0505457, y: 5.2341037, z: 0}
+    m_Extent: {x: 9.433675, y: 6.0898113, z: 0}
 --- !u!4 &568308394
 Transform:
   m_ObjectHideFlags: 0
@@ -6101,6 +6100,7 @@ GameObject:
   - component: {fileID: 1023421346}
   - component: {fileID: 1023421345}
   - component: {fileID: 1023421344}
+  - component: {fileID: 1023421349}
   m_Layer: 3
   m_Name: MainBall (1)
   m_TagString: Player
@@ -6225,6 +6225,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1023421349
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023421343}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8fe156a3ebdb4d4458698d8590eb3e08, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1146534891 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5731311974760124318, guid: 1bb185305880e7e428de1ee2663a29cc, type: 3}
