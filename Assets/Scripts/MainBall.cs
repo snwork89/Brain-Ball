@@ -8,6 +8,7 @@ public class MainBall : MonoBehaviour
     [SerializeField]
     GameOverScreen gameOverScreen;
     AudioSource gameOverSound;
+    bool isOut = false;
 
     private void Start()
     {
@@ -19,9 +20,14 @@ public class MainBall : MonoBehaviour
         Debug.Log(collision.collider.tag);
         if (collision.collider.tag == "GameOver")
         {
-            gameOverSound.Play();
-            Time.timeScale = 0;
-            gameOverScreen.SetUp();
+            if (!isOut)
+            {
+                gameOverSound.Play();
+
+                gameOverScreen.SetUp();
+            }
+            isOut = true;
+         
          /*   FindObjectOfType<GameManager>().EndGame();*/
 
         }

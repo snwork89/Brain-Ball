@@ -1,17 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class pauseMenuContinue : MonoBehaviour, IPointerClickHandler
+public class Loading : MonoBehaviour
 {
-    [SerializeField]
-    pauseMenu menu;
+
+
     // Start is called before the first frame update
     void Start()
     {
-   
+        GameManager.showAd();
+        StartCoroutine(loadScene());
     }
 
     // Update is called once per frame
@@ -20,10 +21,9 @@ public class pauseMenuContinue : MonoBehaviour, IPointerClickHandler
         
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    IEnumerator loadScene()
     {
-      
-        menu.disablePauseMenu();
+        yield return new WaitForSeconds(4);
+        SceneManager.LoadScene(1);
     }
-
 }

@@ -25,9 +25,10 @@ public class Level_Load_Script_1 : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        if (levels_record.getCurrentLevel() <= 0)
+        if (levels_record.getCurrentLevel() >= LevelNumber - 1)
         {
-            SceneManager.LoadScene(LevelNumber);
+            GameManager.showAd();
+            SceneManager.LoadScene(LevelNumber + 1);
         }
     }
 }

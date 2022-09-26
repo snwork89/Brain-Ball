@@ -9,6 +9,7 @@ public class GameOverScreen : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+
     public void SetUp()
     {
         gameObject.SetActive(true);

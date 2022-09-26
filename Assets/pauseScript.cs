@@ -14,7 +14,7 @@ public class pauseScript : MonoBehaviour
     private void Awake()
     {
         pauseButton = GetComponent<Button>();
-        Debug.Log("pause" + pauseButton);
+   
         pauseMenuComponent.SetActive(false);
         
     }
@@ -37,7 +37,7 @@ public class pauseScript : MonoBehaviour
     void showPauseScreen()
     {
         Debug.Log("called");
-        Time.timeScale = 0;
+    
         pauseMenuComponent.SetActive(true);
     }
 
