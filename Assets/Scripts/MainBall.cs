@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainBall : MonoBehaviour
 {
@@ -26,7 +27,16 @@ public class MainBall : MonoBehaviour
         }
         if(collision.collider.tag=="LevelDone")
         {
-            FindObjectOfType<GameManager>().GoToNextLevel();
+            if (SceneManager.GetActiveScene().buildIndex == 3)
+                
+            {
+                GameManager.showAd();
+                SceneManager.LoadScene(0);
+            }
+            else
+            {
+                FindObjectOfType<GameManager>().GoToNextLevel();
+            }
         }
 
 

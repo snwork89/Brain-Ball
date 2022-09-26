@@ -80,6 +80,8 @@ public class Line : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
 		lineRenderer.enabled = false;
+		
+
 
     }
 }

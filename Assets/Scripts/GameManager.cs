@@ -40,8 +40,15 @@ public class GameManager : MonoBehaviour
     public void GoToNextLevel()
     {
         showAd();
-        levels_record.changeLevelsPassed(levels_record.getCurrentLevel() + 1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            SceneManager.LoadScene(0);
+        }
+        else
+        {
+            levels_record.changeLevelsPassed(levels_record.getCurrentLevel() + 1);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
     }
 
     void Restart()
@@ -49,7 +56,7 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    void showAd()
+   public static void showAd()
     {
         if (Advertisement.isInitialized)
         {
