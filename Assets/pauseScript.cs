@@ -37,6 +37,7 @@ public class pauseScript : MonoBehaviour
     void showPauseScreen()
     {
         Debug.Log("called");
+        Time.timeScale = 0;
         pauseMenuComponent.SetActive(true);
     }
 

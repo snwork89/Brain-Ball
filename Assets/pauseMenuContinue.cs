@@ -22,6 +22,7 @@ public class pauseMenuContinue : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        Time.timeScale = 1;
         menu.disablePauseMenu();
     }
 
