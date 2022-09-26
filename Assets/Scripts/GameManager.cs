@@ -4,12 +4,14 @@ using UnityEngine.Advertisements;
 public class GameManager : MonoBehaviour
 {
     bool isGameEnded = false;
+
     public GameOverScreen screenGameOver;
     string gameId = "4940276";
 
     private void Start()
     {
-        Advertisement.Initialize(gameId);
+        Advertisement.Initialize(gameId,false);
+       
     }
 
     private void Update()
@@ -38,6 +40,7 @@ public class GameManager : MonoBehaviour
     public void GoToNextLevel()
     {
         showAd();
+        levels_record.changeLevelsPassed(levels_record.getCurrentLevel() + 1);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 

@@ -19,6 +19,7 @@ public class Level_Load_Script_3 : MonoBehaviour, IPointerClickHandler
 
     void Start()
     {
+        isLevelUnlocked = levels_record.getCurrentLevel() >= LevelNumber ? true : false;
         if (isLevelUnlocked)
         {
             blur.enabled = false;
@@ -28,6 +29,7 @@ public class Level_Load_Script_3 : MonoBehaviour, IPointerClickHandler
         {
             unlockImage.enabled = false;
         }
+
 
     }
 
@@ -39,6 +41,9 @@ public class Level_Load_Script_3 : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        SceneManager.LoadScene(LevelNumber);
+        if (levels_record.getCurrentLevel() >= LevelNumber - 1)
+        {
+            SceneManager.LoadScene(LevelNumber);
+        }
     }
 }

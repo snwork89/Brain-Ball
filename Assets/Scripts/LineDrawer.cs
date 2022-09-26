@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class LineDrawer : MonoBehaviour
@@ -45,8 +46,11 @@ public class LineDrawer : MonoBehaviour
 		currentLine.SetLineColor(lineColor);
 		currentLine.SetPointsMinDistance(linePointsMinDistance);
 		currentLine.SetLineWidth(lineWidth);
+		currentLine.DestroyLine();
 
-	}
+
+    }
+
 	// Draw ----------------------------------------------------
 	void Draw()
 	{

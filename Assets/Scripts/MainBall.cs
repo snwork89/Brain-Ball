@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class MainBall : MonoBehaviour
 {
+    [SerializeField]
+    GameOverScreen gameOverScreen;
     private void OnCollisionEnter2D(Collision2D collision)
     {
       
         Debug.Log(collision.collider.tag);
         if (collision.collider.tag == "GameOver")
         {
-            FindObjectOfType<GameManager>().EndGame();
+            gameOverScreen.SetUp();
+         /*   FindObjectOfType<GameManager>().EndGame();*/
+
         }
         if(collision.collider.tag=="LevelDone")
         {

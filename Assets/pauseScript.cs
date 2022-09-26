@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class pauseScript : MonoBehaviour
 {
+
     Button pauseButton;
     [SerializeField]
     GameObject pauseMenuComponent;
@@ -13,6 +14,7 @@ public class pauseScript : MonoBehaviour
     private void Awake()
     {
         pauseButton = GetComponent<Button>();
+        Debug.Log("pause" + pauseButton);
         pauseMenuComponent.SetActive(false);
         
     }
@@ -26,7 +28,10 @@ public class pauseScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (pauseButton == null)
+        {
+            pauseButton.onClick.AddListener(showPauseScreen);
+        }
     }
 
     void showPauseScreen()
@@ -34,4 +39,8 @@ public class pauseScript : MonoBehaviour
         Debug.Log("called");
         pauseMenuComponent.SetActive(true);
     }
+
+
+
+  
 }

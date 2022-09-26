@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 public class Line : MonoBehaviour
 {
@@ -70,4 +71,15 @@ public class Line : MonoBehaviour
 		edgeCollider.edgeRadius = circleColliderRadius;
 	}
 
+	public void DestroyLine()
+	{
+		StartCoroutine(destroyLines());
+	}
+
+    IEnumerator destroyLines()
+    {
+        yield return new WaitForSeconds(3);
+		lineRenderer.enabled = false;
+
+    }
 }
