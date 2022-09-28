@@ -11,7 +11,7 @@ public class Loading : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameManager.showAd();
+        Ad_Manager.instance.Show_Ad();
         StartCoroutine(loadScene());
     }
 

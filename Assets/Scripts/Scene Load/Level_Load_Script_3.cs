@@ -43,7 +43,7 @@ public class Level_Load_Script_3 : MonoBehaviour, IPointerClickHandler
     {
         if (levels_record.getCurrentLevel() >= LevelNumber - 1)
         {
-            GameManager.showAd();
+            Ad_Manager.instance.Show_Ad();
             SceneManager.LoadScene(LevelNumber + 1);
         }
     }

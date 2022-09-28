@@ -1,19 +1,11 @@
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.Advertisements;
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour,IUnityAdsLoadListener
 {
     bool isGameEnded = false;
 
     public GameOverScreen screenGameOver;
-    string gameId = "4940276";
-
-    private void Start()
-    {
-        Advertisement.Initialize(gameId,false);
-       
-    }
-
     private void Update()
     {
         if (Application.platform == RuntimePlatform.Android)
@@ -39,7 +31,7 @@ public class GameManager : MonoBehaviour
 
     public void GoToNextLevel()
     {
-        showAd();
+        Ad_Manager.instance.Show_Ad();
         if (SceneManager.GetActiveScene().buildIndex == 3)
         {
             SceneManager.LoadScene(0);
@@ -56,11 +48,13 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-   public static void showAd()
+    public void OnUnityAdsAdLoaded(string placementId)
     {
-        if (Advertisement.isInitialized)
-        {
-            Advertisement.Show("Interstitial_Android");
-        }
+        throw new System.NotImplementedException();
+    }
+
+    public void OnUnityAdsFailedToLoad(string placementId, UnityAdsLoadError error, string message)
+    {
+        throw new System.NotImplementedException();
     }
 }

@@ -36,7 +36,7 @@ public class MainBall : MonoBehaviour
             if (SceneManager.GetActiveScene().buildIndex == 3)
                 
             {
-                GameManager.showAd();
+                Ad_Manager.instance.Show_Ad();
                 SceneManager.LoadScene(0);
             }
             else
