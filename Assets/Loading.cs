@@ -11,7 +11,7 @@ public class Loading : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Ad_Manager.instance.Show_Ad();
+       
         StartCoroutine(loadScene());
     }
 
@@ -24,6 +24,7 @@ public class Loading : MonoBehaviour
     IEnumerator loadScene()
     {
         yield return new WaitForSeconds(4);
+         Ad_Manager.instance.Show_Ad();
         SceneManager.LoadScene(1);
     }
 }
