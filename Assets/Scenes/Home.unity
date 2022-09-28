@@ -345,7 +345,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &294270005
 GameObject:
@@ -718,7 +718,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &449154067
 PrefabInstance:
@@ -824,11 +824,6 @@ PrefabInstance:
 --- !u!224 &449154068 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4332602101462820357, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
-  m_PrefabInstance: {fileID: 449154067}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &449154069 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4332602101462820362, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
   m_PrefabInstance: {fileID: 449154067}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &500959889
@@ -2481,7 +2476,7 @@ RectTransform:
   - {fileID: 857409008}
   - {fileID: 449154068}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2500,7 +2495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9434d9939c5a68543a44dfe920e4a20d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LoadingUI: {fileID: 449154069}
+  LoadingUI: {fileID: 4332602101462820362, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
 --- !u!1 &1499355294
 GameObject:
   m_ObjectHideFlags: 0

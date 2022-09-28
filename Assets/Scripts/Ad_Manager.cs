@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Advertisements;
+using UnityEngine.SceneManagement;
 
 public class Ad_Manager : MonoBehaviour
 {
@@ -17,10 +18,15 @@ public class Ad_Manager : MonoBehaviour
         {
             instance = this;
         }
+      /* float currentScene = SceneManager.GetActiveScene().buildIndex;
+        Debug.Log("current"+currentScene);
+        if(currentScene > 0){
+            LoadingUI.SetActive(false);
+        }*/
     }
     void Start()
     {
-        Advertisement.Initialize(Game_Id);
+        Advertisement.Initialize(Game_Id,true);
     }
 
     // Update is called once per frame
@@ -49,6 +55,7 @@ public class Ad_Manager : MonoBehaviour
         // show the ad if it is now ready
         if (Advertisement.isInitialized)
         {
+            Debug.Log("Done");
             Advertisement.Show("Interstitial_Android");
         }
         else
