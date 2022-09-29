@@ -26,7 +26,7 @@ public class Ad_Manager : MonoBehaviour
     }
     void Start()
     {
-        Advertisement.Initialize(Game_Id,true);
+        Advertisement.Initialize(Game_Id,false);
     }
 
     // Update is called once per frame
@@ -45,6 +45,8 @@ public class Ad_Manager : MonoBehaviour
         float currentTime = 0.0f;
 
         LoadingUI.SetActive(true);
+
+        Debug.Log("INIT-----------------" + Advertisement.isInitialized);
 
         while (currentTime <= waitTime && !Advertisement.isInitialized)
         {
