@@ -24,7 +24,6 @@ public class Loading : MonoBehaviour
     IEnumerator loadScene()
     {
         yield return new WaitForSeconds(4);
-         Ad_Manager.instance.Show_Ad();
         SceneManager.LoadScene(1);
     }
 }

@@ -78,9 +78,9 @@ public class Line : MonoBehaviour
 
     IEnumerator destroyLines()
     {
-        yield return new WaitForSeconds(3);
-		lineRenderer.enabled = false;
-		
+        yield return new WaitForSeconds(6);
+	
+		Destroy(gameObject);
 
 
     }
