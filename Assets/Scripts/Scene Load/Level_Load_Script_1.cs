@@ -25,6 +25,7 @@ public class Level_Load_Script_1 : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+   
         if (levels_record.getCurrentLevel() >= LevelNumber - 1)
         {
             Ad_Manager.instance.Show_Ad();

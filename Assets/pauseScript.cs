@@ -34,7 +34,7 @@ public class pauseScript : MonoBehaviour
         }
     }
 
-    void showPauseScreen()
+   public void showPauseScreen()
     {
         Debug.Log("called");
     

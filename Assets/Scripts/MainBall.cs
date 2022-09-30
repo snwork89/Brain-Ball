@@ -33,7 +33,7 @@ public class MainBall : MonoBehaviour
         }
         if(collision.collider.tag=="LevelDone")
         {
-            if (SceneManager.GetActiveScene().buildIndex == 3)
+            if (SceneManager.GetActiveScene().buildIndex == 4)
                 
             {
                 Ad_Manager.instance.Show_Ad();

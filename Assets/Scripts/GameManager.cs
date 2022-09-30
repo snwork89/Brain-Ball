@@ -32,13 +32,14 @@ public class GameManager : MonoBehaviour,IUnityAdsLoadListener
     public void GoToNextLevel()
     {
         Ad_Manager.instance.Show_Ad();
-        if (SceneManager.GetActiveScene().buildIndex == 3)
+        if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             SceneManager.LoadScene(0);
         }
         else
         {
-            levels_record.changeLevelsPassed(levels_record.getCurrentLevel() + 1);
+            float newLevel = levels_record.getCurrentLevel() + 1;
+            levels_record.changeLevelsPassed(newLevel);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }

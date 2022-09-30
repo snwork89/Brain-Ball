@@ -32,7 +32,7 @@ public class Ad_Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Debug.Log(levels_record.getCurrentLevel());
     }
 
     public void Show_Ad()
@@ -46,7 +46,6 @@ public class Ad_Manager : MonoBehaviour
 
         LoadingUI.SetActive(true);
 
-        Debug.Log("INIT-----------------" + Advertisement.isInitialized);
 
         while (currentTime <= waitTime && !Advertisement.isInitialized)
         {
@@ -57,7 +56,7 @@ public class Ad_Manager : MonoBehaviour
         // show the ad if it is now ready
         if (Advertisement.isInitialized)
         {
-            Debug.Log("Done");
+         
             Advertisement.Show("Interstitial_Android");
         }
         else
