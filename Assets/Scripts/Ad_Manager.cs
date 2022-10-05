@@ -57,7 +57,7 @@ public class Ad_Manager : MonoBehaviour
         if (Advertisement.isInitialized)
         {
          
-            Advertisement.Show("Interstitial_Android");
+            Advertisement.Show("Rewarded_Android");
         }
         else
         {

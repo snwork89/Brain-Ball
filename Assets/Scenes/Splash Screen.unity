@@ -448,15 +448,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4332602099781459452, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4332602099781459452, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4332602099781459452, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332602099781459452, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332602099781459452, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 125
       objectReference: {fileID: 0}
     - target: {fileID: 4332602101462820357, guid: 535952923d0fb1d4fab293a6ea6a5f3b, type: 3}
       propertyPath: m_Pivot.x

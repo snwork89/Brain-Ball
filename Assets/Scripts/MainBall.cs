@@ -20,6 +20,7 @@ public class MainBall : MonoBehaviour
         Debug.Log(collision.collider.tag);
         if (collision.collider.tag == "GameOver")
         {
+            Debug.Log("called" + isOut);
             if (!isOut)
             {
                 gameOverSound.Play();
